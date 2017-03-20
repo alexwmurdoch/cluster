@@ -1,0 +1,73 @@
+/*--------------------------------------------------------------
+# Sticky Footer
+--------------------------------------------------------------*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+.site-content {
+  overflow: hidden
+}
+.site-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  clear: both;
+}
+
+/*--------------------------------------------------------------
+# bootstrap grid @extends
+--------------------------------------------------------------*/
+
+.content-area.no-sidebar{
+  @extend .col-md-12;
+}
+.content-area.sidebar-left{
+  @extend .col-md-9;
+  @extend .col-md-push-3;
+}
+.content-area.sidebar-right{
+  @extend .col-md-9;
+}
+
+.widget-area.no-sidebar{
+  display:none;
+}
+.widget-area.sidebar-left{
+  @extend .col-md-3;
+  @extend .col-md-pull-9;
+}
+.widget-area.sidebar-right{
+  @extend .col-md-3;
+}
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio-two-col{
+  @extend .col-sm-6;
+  @extend .col-md-6;
+}
+.portfolio-three-col{
+  @extend .col-sm-6;
+  @extend .col-md-4;
+}
+.portfolio-four-col{
+  @extend .col-sm-6;
+  @extend .col-md-3;
+}
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.service-two-col{
+  @extend .col-sm-6;
+  @extend .col-md-6;
+}
+.service-three-col{
+  @extend .col-sm-6;
+  @extend .col-md-4;
+}
+.service-four-col{
+  @extend .col-sm-6;
+  @extend .col-md-3;
+}
